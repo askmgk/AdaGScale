@@ -7,10 +7,10 @@ terminal on the machine with the GPU.
 
 ## 1. Get the source and make the environment
 
-Clone this repository from its GitHub page, then enter it:
+Clone this repository, then enter it:
 
 ```bash
-git clone YOUR_REPOSITORY_URL AdaGScale_GitHub
+git clone https://github.com/askmgk/AdaGScale.git AdaGScale_GitHub
 cd AdaGScale_GitHub
 nvidia-smi
 conda env create -f environment.yml
@@ -18,7 +18,6 @@ conda activate adagscale
 python -c "import torch; print(torch.__version__, torch.version.cuda)"
 ```
 
-Replace `YOUR_REPOSITORY_URL` with the repository's actual clone URL.
 `environment.yml` is the standard, editable specification. It installs
 Python 3.7, PyTorch 1.12.1, CUDA 11.6, the CUDA toolkit, compilers, and Python
 dependencies. Conda activation must succeed
