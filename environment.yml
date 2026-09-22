@@ -1,0 +1,19 @@
+name: adagscale
+channels:
+  - nvidia/label/cuda-11.6.0
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7.15
+  - pytorch=1.12.1
+  - mkl<2024.1
+  - cudatoolkit=11.6
+  - cuda-toolkit=11.6
+  - gcc_linux-64=10.4
+  - gxx_linux-64=10.4
+  - numpy=1.21.5
+  - pillow=9.4
+  - ninja
+  - setuptools=65.6.3
+  - packaging
