@@ -2,6 +2,8 @@
 
 **Joongho Jo, Hyerin Lim, Hanjun Choi, and Jongsun Park** (Korea University)
 
+**Accepted at DAC 2026.**
+
 [Paper (arXiv)](https://arxiv.org/abs/2604.18980) | [PDF](https://arxiv.org/pdf/2604.18980)
 
 ## Abstract
