@@ -9,7 +9,7 @@ preserved in `third_party/FlashGS_LICENSE`.
 headers. GLM offers a choice of the Happy Bunny License or MIT License; this
 release uses the MIT option. Its notice is in `third_party/GLM_LICENSE`.
 
-The K calibration and benchmark wrappers and the supplied scene-specific
-`T_upper` CSV tables come from local AdaGScale research work. The table
-extraction implementation, pretrained checkpoints, dataset images, and raw
-experiment outputs are not included.
+The K calibration and benchmark scripts and the supplied scene-specific
+`T_upper` CSV tables were developed for AdaGScale. The `T_upper` extraction
+implementation, pretrained checkpoints, dataset images, and raw experiment
+outputs are not included.
