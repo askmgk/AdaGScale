@@ -1,9 +1,7 @@
 # Precomputed scene-specific T_upper tables
 
-This directory contains 17 precomputed tables:
-
-- 13 Original 3D-GS checkpoints: `*_ori_small_16x16.csv`;
-- four CityGaussian checkpoints: `*_citygs_large_32x32.csv`.
+This directory contains precomputed tables for 13 Original 3D-GS checkpoints:
+`*_ori_small_16x16.csv`.
 
 Each table was computed from 16 training views. `MANIFEST.csv` records the
 exact image names and source indices used for each table.
@@ -16,8 +14,7 @@ corresponding checkpoint and configuration. A custom or independently trained
 checkpoint requires a newly computed table; the extraction implementation is
 not included in this release.
 
-The `*_small_16x16.csv` tables require `"tile_size": 16`. The
-`*_citygs_large_32x32.csv` tables require `"tile_size": 32`.
+The supplied `*_small_16x16.csv` tables require `"tile_size": 16`.
 
 For the 13 Original 3D-GS scenes, `run_official_scene.sh <scene>` selects the
 matching table and creates camera lists using the image names in

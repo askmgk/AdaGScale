@@ -82,25 +82,13 @@ python prepare_official_3dgs.py \
   --scene train
 ```
 
-## CityGaussian tables
-
-The repository also supplies precomputed `T_upper` tables for four CityGaussian
-checkpoints. These tables require the matching checkpoint, camera metadata,
-images, resolution, and tile size; the Original 3D-GS scene script does not
-select them automatically.
-
-The CityGaussian tables for `building`, `rubble`, `residence`, and `sciart`
-require `"tile_size": 32`. The supplied Original 3D-GS tables use
-`"tile_size": 16`. See the
-[`T_upper` table documentation](../tupper_tables/README.md) for file naming and
-compatibility requirements.
-
 ## Custom checkpoints
 
 `T_upper` depends on the checkpoint, selected cameras, image resolution, and
 renderer tile size. A custom or independently trained checkpoint therefore
 requires a newly computed `T_upper` table. The extraction implementation is not
-included in this release.
+included in this release. The supplied tables apply only to the 13 official
+Original 3D-GS checkpoints listed above.
 
 After obtaining a matching table, create a scene configuration with these
 fields:

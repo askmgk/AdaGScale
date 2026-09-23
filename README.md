@@ -83,16 +83,15 @@ Results are written separately under `results/<case_id>/actual_.../` and
 
 ## Supplied tables and supported checkpoints
 
-The repository includes precomputed tables for 13 Original 3D-GS and four
-CityGaussian checkpoints. The one-command `run_official_scene.sh` workflow
-supports these 13 Original 3D-GS scenes:
+The repository includes precomputed tables for the 13 Original 3D-GS
+checkpoints supported by the one-command `run_official_scene.sh` workflow:
 
 `train`, `truck`, `drjohnson`, `playroom`, `bicycle`, `flowers`, `garden`,
 `stump`, `treehill`, `bonsai`, `counter`, `kitchen`, and `room`.
 
-The Original 3D-GS workflow uses 16×16 tiles. The supplied CityGaussian tables
-for `building`, `rubble`, `residence`, and `sciart` require 32×32 tiles. See
-[`tupper_tables/README.md`](tupper_tables/README.md) before selecting a table.
+These tables use 16×16 tiles. Other pretrained or custom checkpoints require a
+newly computed table matched to the checkpoint and rendering configuration. See
+[`tupper_tables/README.md`](tupper_tables/README.md) for compatibility details.
 
 ## Repository structure
 
